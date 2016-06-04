@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Learn_Catalogreplace>
+            <version>1.0.0</version>
+        </Learn_Catalogreplace>
+    </modules>
+    
+    <frontend>
+        <routers>
+            <catalogreplace>
+                <use>standard</use>
+                <args>
+                    <module>Learn_Catalogreplace</module>
+                    <frontName>catalogreplace</frontName>
+                </args>
+            </catalogreplace>
+        </routers>
+        
+        <layout>
+            <updates>
+                <catalogreplace>
+                    <file>learn/catalogreplace.xml</file>
+                </catalogreplace>
+            </updates>
+        </layout>
+    </frontend>
+    
+    <admin>
+        <routers>
+			<catalogreplace>
+				<use>admin</use>
+				<args>
+					<module>Learn_Catalogreplace</module>
+					<frontName>catalogreplace</frontName>
+				</args>
+			</catalogreplace>
+        </routers>
+    </admin>
+    
+    <adminhtml>
+		<layout>
+			<updates>
+				<catalogreplace>
+					<file>learn/catalogreplace.xml</file>
+				</catalogreplace>
+			</updates>
+		</layout>	
+    </adminhtml>
+    
+    <global>
+        <models>
+            <catalogreplace>
+                <class>Learn_Catalogreplace_Model</class>
+            </catalogreplace>
+        </models>
+        <blocks>
+            <catalogreplace>
+                <class>Learn_Catalogreplace_Block</class>
+            </catalogreplace>
+        </blocks>        
+        <helpers>
+            <catalogreplace>
+                <class>Learn_Catalogreplace_Helper</class>
+            </catalogreplace>
+        </helpers>
+    </global>
+    
+	
+	<default>
+		<catalogreplace_tab>
+			<catalogreplace_setting>
+				<catalogreplace_fields>short_description,description</catalogreplace_fields>
+			</catalogreplace_setting>
+		</catalogreplace_tab>
+	</default>
+    
+</config>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <catalogreplace_tabs translate="label" module="catalogreplace">
+            <label>Catalog Replace</label>
+            <sort_order>400</sort_order>
+        </catalogreplace_tabs>
+    </tabs>
+    
+	<sections>
+        <catalogreplace_tab translate="label" module="catalogreplace">
+            <label>Catalog Replace</label>
+            <tab>catalogreplace_tabs</tab>
+            <sort_order>300</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            
+            <groups>
+				<catalogreplace_setting translate="label comment">
+                    <label>Catalog Replace Configuration</label>
+                    <sort_order>505</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<catalogreplace_fields translate="label comment">
+                            <label>Catalog Replace Fileds</label>
+							<frontend_type>multiselect</frontend_type>
+                            <source_model>catalogreplace/dropdown_fields</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catalogreplace_fields>                     
+					</fields>	
+				</catalogreplace_setting>
+            </groups>
+        </catalogreplace_tab>  
+    </sections>
+</config>
