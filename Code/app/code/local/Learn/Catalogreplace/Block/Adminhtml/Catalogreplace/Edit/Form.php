@@ -27,7 +27,7 @@ class Learn_Catalogreplace_Block_Adminhtml_Catalogreplace_Edit_Form extends Mage
 			'required'		=> true,
 			'tabindex' 		=> 1,
 			'maxlength'		=> 20,
-            'class' 		=> " ",
+            		'class' 		=> " ",
 		));
         
 		$fieldset->addField('replace_text', 'text', array(
@@ -35,7 +35,7 @@ class Learn_Catalogreplace_Block_Adminhtml_Catalogreplace_Edit_Form extends Mage
 			'label'         => Mage::helper('catalogreplace')->__('Replace Text'),
 			'value'         => '',
 			'required'		=> true,
-            'maxlength'		=> 20,
+        		'maxlength'		=> 20,
 			'class' 		=> " ",
 		));
 		
