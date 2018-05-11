@@ -52,7 +52,7 @@ class Learn_Catalogreplace_Adminhtml_ReplaceController extends Mage_Adminhtml_Co
 				$count = 0;
 				
 				$newValue = str_replace($search, $replace,  $_product->getData($attribute), $count);
-				
+				$newValue = trim($newValue);
 				//If $count >  0 that means we replaced |$count| times search string
 				if($count > 0) {
 					$changedAttributes[] = $attribute;
